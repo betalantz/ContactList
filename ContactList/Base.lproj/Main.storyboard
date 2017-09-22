@@ -225,8 +225,16 @@
                         <viewLayoutGuide key="safeArea" id="tWi-9i-p9t"/>
                     </view>
                     <navigationItem key="navigationItem" id="gLh-UE-okR">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Y1m-Wx-ET7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Y1m-Wx-ET7">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="LRM-CP-rrz" id="xfH-o2-w1K"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="showNameLabel" destination="DfA-cD-ROB" id="boH-th-RM8"/>
+                        <outlet property="showNumberLabel" destination="lhb-5o-diV" id="d1m-du-B4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1P-fM-bCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
